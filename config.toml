@@ -1,4 +1,4 @@
-baseURL = "http://qcliwei.com/"
+baseURL = "https://qcliwei.com/"
 languageCode = "zh-CN"
 title = "Liwei Blog"
 theme = "hugo-nuo"
