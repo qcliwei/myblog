@@ -6,18 +6,85 @@
     <description>Recent content on Liwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Thu, 14 Feb 2019 10:58:17 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 09 Apr 2014 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://qcliwei.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>First Post</title>
+      <title>归档</title>
+      <link>https://qcliwei.com/archives/</link>
+      <pubDate>Wed, 09 Apr 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://qcliwei.com/archives/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>切换到hugo来构建</title>
       <link>https://qcliwei.com/post/first-post/</link>
       <pubDate>Thu, 14 Feb 2019 10:58:17 +0800</pubDate>
       
       <guid>https://qcliwei.com/post/first-post/</guid>
       <description>生活在于折腾，用hugo来弄一弄博客</description>
+    </item>
+    
+    <item>
+      <title>干净秩序自动化的“小”日本</title>
+      <link>https://qcliwei.com/post/travel-japan/</link>
+      <pubDate>Thu, 08 Oct 2015 11:26:02 +0800</pubDate>
+      
+      <guid>https://qcliwei.com/post/travel-japan/</guid>
+      <description>&lt;p&gt;这个10.1到了日本，主要呆在京都和大阪一共呆了5个晚上，虽然时间很短，但是日本给我的印象还是很深刻的，总体来说就是&lt;code&gt;干净&lt;/code&gt;，&lt;code&gt;有秩序&lt;/code&gt;，&lt;code&gt;自动化&lt;/code&gt;，日本麻雀虽小五脏俱全，他们对空间的利用到了发指的地步。其他城市没去过，也算是管中窥豹可见一斑吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>给Mac配了机械键盘</title>
+      <link>https://qcliwei.com/post/keyboard/</link>
+      <pubDate>Wed, 05 Aug 2015 11:12:14 +0800</pubDate>
+      
+      <guid>https://qcliwei.com/post/keyboard/</guid>
+      <description>&lt;p&gt;工作的电脑是MacBook Pro，有了外接显示器，自带的触摸板还有键盘就不是很方便了，上X宝直接入手了底座还有机械键盘，这年头啥东西都可以烧，我也算尝尝鲜吧，键盘是日常工作中接触最多的设备了，400大洋买了入门级&lt;code&gt;茶轴&lt;/code&gt;的，看各路大神动辄上千的我也是烧不起了。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>七色塞班岛，纯色之旅</title>
+      <link>https://qcliwei.com/post/travel-saiban/</link>
+      <pubDate>Fri, 01 May 2015 18:29:15 +0800</pubDate>
+      
+      <guid>https://qcliwei.com/post/travel-saiban/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;一直想和老婆来次海岛之行，这次终于实现了，从塞班岛回来10天了，但是那里的蓝天大海白沙滩一直在脑海挥之不去，让人好想再去一次，那里给人的感觉太适合度假了，安逸休闲美景……&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mac Mini加装SSD，焕发第二春</title>
+      <link>https://qcliwei.com/post/mac-mini/</link>
+      <pubDate>Fri, 31 Oct 2014 11:04:45 +0800</pubDate>
+      
+      <guid>https://qcliwei.com/post/mac-mini/</guid>
+      <description>&lt;p&gt;Mac mini是12年底买的，那时候系统还是自带的OS X Mountain Lion(10.8.5)系统，现在已经是Yosemite(10.10)了,本来mini作为入门级Mac电脑配置就比较低,已经跟不上节奏了，用户体验大大降低。现在每次开机都要50秒左右，打开Xcode等大型程序时，鼠标那个圈圈都要转好久，遂决定手动升级。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>那些年看过的NBA</title>
+      <link>https://qcliwei.com/post/nba/</link>
+      <pubDate>Sun, 15 Jun 2014 12:38:40 +0800</pubDate>
+      
+      <guid>https://qcliwei.com/post/nba/</guid>
+      <description>&lt;p&gt;每年的这个时候对于高中生来说是人生中的一次转折点，对于我来说是中考，高考的记忆和NBA总决赛。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>迟到的开篇</title>
+      <link>https://qcliwei.com/post/creat-blog/</link>
+      <pubDate>Sun, 18 May 2014 12:43:31 +0800</pubDate>
+      
+      <guid>https://qcliwei.com/post/creat-blog/</guid>
+      <description>&lt;h2 id=&#34;blog创建&#34;&gt;blog创建&lt;/h2&gt;
+
+&lt;p&gt;自从成为一个程序猿的时候，就聆听大牛们的教诲，要写技术博客，不仅是作为自己的技术堆栈，而且也是一种分享精神，于是就有了这个blog的由来。在选blog的时候也是看了好多技术博客社区，有csdn，博客园等等，但都不是我喜欢的风格，所以当我成为猿类的时候写blog就一直没有落实下来，直到后来看大牛的博客都是在&lt;a href=&#34;https://github.com/&#34;&gt;github&lt;/a&gt;上搭建的，用的是&lt;a href=&#34;http://octopress.org/&#34;&gt;Octopress&lt;/a&gt;框架生成的。&lt;/p&gt;</description>
     </item>
     
   </channel>

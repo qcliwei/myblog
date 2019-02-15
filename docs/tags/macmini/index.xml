@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Macmini on Liwei Blog</title>
+    <link>https://qcliwei.com/tags/macmini/</link>
+    <description>Recent content in Macmini on Liwei Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 31 Oct 2014 11:04:45 +0800</lastBuildDate>
+    
+	<atom:link href="https://qcliwei.com/tags/macmini/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Mac Mini加装SSD，焕发第二春</title>
+      <link>https://qcliwei.com/post/mac-mini/</link>
+      <pubDate>Fri, 31 Oct 2014 11:04:45 +0800</pubDate>
+      
+      <guid>https://qcliwei.com/post/mac-mini/</guid>
+      <description>&lt;p&gt;Mac mini是12年底买的，那时候系统还是自带的OS X Mountain Lion(10.8.5)系统，现在已经是Yosemite(10.10)了,本来mini作为入门级Mac电脑配置就比较低,已经跟不上节奏了，用户体验大大降低。现在每次开机都要50秒左右，打开Xcode等大型程序时，鼠标那个圈圈都要转好久，遂决定手动升级。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

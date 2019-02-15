@@ -3,8 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://qcliwei.com/archives/</loc>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://qcliwei.com/post/first-post/</loc>
     <lastmod>2019-02-14T10:58:17+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/post/travel-japan/</loc>
+    <lastmod>2015-10-08T11:26:02+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/post/keyboard/</loc>
+    <lastmod>2015-08-05T11:12:14+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/post/travel-saiban/</loc>
+    <lastmod>2015-05-01T18:29:15+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/post/mac-mini/</loc>
+    <lastmod>2014-10-31T11:04:45+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/post/nba/</loc>
+    <lastmod>2014-06-15T12:38:40+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/post/creat-blog/</loc>
+    <lastmod>2014-05-18T12:43:31+08:00</lastmod>
   </url>
   
   <url>
@@ -14,7 +49,19 @@
   
   <url>
     <loc>https://qcliwei.com/</loc>
-    <lastmod>2019-02-14T10:58:17+08:00</lastmod>
+    <lastmod>2014-04-09T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/tags/macmini/</loc>
+    <lastmod>2014-10-31T11:04:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/tags/nba/</loc>
+    <lastmod>2014-06-15T12:38:40+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -26,6 +73,31 @@
   
   <url>
     <loc>https://qcliwei.com/tags/</loc>
+    <lastmod>2014-10-31T11:04:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/tags/%E5%A1%9E%E7%8F%AD/</loc>
+    <lastmod>2015-05-01T18:29:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/tags/%E6%97%A5%E6%9C%AC/</loc>
+    <lastmod>2015-10-08T11:26:02+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/tags/%E6%9C%BA%E6%A2%B0%E9%94%AE%E7%9B%98/</loc>
+    <lastmod>2015-08-05T11:12:14+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/tags/%E7%94%9F%E6%B4%BB/</loc>
+    <lastmod>2014-05-18T12:43:31+08:00</lastmod>
     <priority>0</priority>
   </url>
   
