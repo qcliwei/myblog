@@ -13,9 +13,9 @@ var filesToCache = [
   'icons/icon-512x512.png',
   'images/avatar.png',
   'images/grey-prism.svg',
-  'images/qrcode.jpg',
+  // 'images/qrcode.jpg',
   'styles/main.min.css',
-  'styles/custom.min.css',
+  // 'styles/custom.min.css',
   'scripts/index.min.js',
 
   // Google fonts
