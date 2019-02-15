@@ -33,7 +33,7 @@ googleAnalytics = "UA-134619349-1"
 [params]
   author = "liwei"
   bg = "images/grey-prism.svg"
-  avatar = "images/avatar.jpg"
+  avatar = "images/avatar.png"
   seotitle = "Liwei Blog"
   subtitle = "没事早点睡,有空多赚钱"
   description = "qcliwei"
