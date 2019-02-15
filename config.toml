@@ -11,7 +11,7 @@ publishDir = "docs"
 # disqusShortname = "disqus_shortname"
 
 # Google Analytics UA number
-# googleAnalytics = "UA-XXXXXXXX-X"
+googleAnalytics = "UA-134619349-1"
 
 # Copyright of your post
 # copyright = "© This post is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License，please give source if you wish to quote or reproduce."
@@ -36,7 +36,7 @@ publishDir = "docs"
   avatar = "images/avatar.jpg"
   seotitle = "Liwei Blog"
   subtitle = "没事早点睡,有空多赚钱"
-  description = "Hugo is one of the most popular open-source static site generators. With its amazing speed and flexibility, Hugo makes building websites fun again."
+  description = "qcliwei"
   paginate = 10
 
   # Choose your social networks
