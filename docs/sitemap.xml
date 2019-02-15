@@ -13,6 +13,11 @@
   </url>
   
   <url>
+    <loc>https://qcliwei.com/post/travel-fud/</loc>
+    <lastmod>2018-10-08T18:55:14+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://qcliwei.com/post/travel-japan/</loc>
     <lastmod>2015-10-08T11:26:02+08:00</lastmod>
   </url>
@@ -80,6 +85,12 @@
   <url>
     <loc>https://qcliwei.com/tags/%E5%A1%9E%E7%8F%AD/</loc>
     <lastmod>2015-05-01T18:29:15+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://qcliwei.com/tags/%E5%AF%8C%E5%9B%BD%E5%B2%9B/</loc>
+    <lastmod>2018-10-08T18:55:14+08:00</lastmod>
     <priority>0</priority>
   </url>
   
