@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>Carthage安装和使用</title>
+      <link>https://qcliwei.com/post/carthage-install-use/</link>
+      <pubDate>Wed, 20 Feb 2019 18:11:31 +0800</pubDate>
+      
+      <guid>https://qcliwei.com/post/carthage-install-use/</guid>
+      <description>&lt;p&gt;之前用OC的时候，第三方库一直用&lt;a href=&#34;https://github.com/CocoaPods/CocoaPods&#34;&gt;CocoaPods&lt;/a&gt;管理和集成，现在用Swift开始用&lt;a href=&#34;https://github.com/Carthage/Carthage&#34;&gt;Carthage&lt;/a&gt;来做&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>切换到hugo来构建</title>
       <link>https://qcliwei.com/post/first-post/</link>
       <pubDate>Thu, 14 Feb 2019 10:58:17 +0800</pubDate>

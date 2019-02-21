@@ -6,10 +6,19 @@
     <description>Recent content in Tags on Liwei Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Fri, 31 Oct 2014 11:04:45 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 Feb 2019 18:11:31 +0800</lastBuildDate>
     
 	<atom:link href="https://qcliwei.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Carthage</title>
+      <link>https://qcliwei.com/tags/carthage/</link>
+      <pubDate>Wed, 20 Feb 2019 18:11:31 +0800</pubDate>
+      
+      <guid>https://qcliwei.com/tags/carthage/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Macmini</title>

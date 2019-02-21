@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+
+  <meta charset="utf-8" />
+
+  
+  <title>Carthage安装和使用</title>
+
+  
+  
+  <link href="//cdn.jsdelivr.net" rel="dns-prefetch">
+  <link href="//cdnjs.cloudflare.com" rel="dns-prefetch">
+  <link href="//at.alicdn.com" rel="dns-prefetch">
+  <link href="//fonts.googleapis.com" rel="dns-prefetch">
+  <link href="//fonts.gstatic.com" rel="dns-prefetch">
+  
+  
+  
+  <link href="//www.google-analytics.com" rel="dns-prefetch">
+  
+
+  
+
+  
+  
+  <meta name="description" content="之前用OC的时候，第三方库一直用CocoaPods管理和集成，现在用Swift开始用Carthage来做
+">
+
+  
+  
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@gohugoio">
+    <meta name="twitter:title" content="Carthage安装和使用">
+    <meta name="twitter:description" content="之前用OC的时候，第三方库一直用CocoaPods管理和集成，现在用Swift开始用Carthage来做
+">
+    <meta name="twitter:image" content="/images/avatar.png">
+  
+
+  
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Carthage安装和使用">
+  <meta property="og:description" content="之前用OC的时候，第三方库一直用CocoaPods管理和集成，现在用Swift开始用Carthage来做
+">
+  <meta property="og:url" content="https://qcliwei.com/post/carthage-install-use/">
+  <meta property="og:image" content="/images/avatar.png">
+
+
+
+
+<meta name="generator" content="Hugo 0.54.0">
+
+
+<link rel="canonical" href="https://qcliwei.com/post/carthage-install-use/">
+
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="format-detection" content="telephone=no,email=no,adress=no">
+<meta http-equiv="Cache-Control" content="no-transform">
+
+
+<meta name="robots" content="index,follow">
+<meta name="referrer" content="origin-when-cross-origin">
+
+
+
+
+
+
+
+<meta name="theme-color" content="#02b875">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Liwei Blog">
+<meta name="msapplication-tooltip" content="Liwei Blog">
+<meta name='msapplication-navbutton-color' content="#02b875">
+<meta name="msapplication-TileColor" content="#02b875">
+<meta name="msapplication-TileImage" content="/icons/icon-144x144.png">
+<link rel="icon" href="https://qcliwei.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://qcliwei.com/icons/icon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://qcliwei.com/icons/icon-32x32.png">
+<link rel="icon" sizes="192x192" href="https://qcliwei.com/icons/icon-192x192.png">
+<link rel="apple-touch-icon" href="https://qcliwei.com/icons/icon-152x152.png">
+<link rel="manifest" href="https://qcliwei.com/manifest.json">
+
+
+<link rel="preload" href="https://qcliwei.com/styles/main.min.css" as="style">
+
+<link rel="preload" href="https://fonts.googleapis.com/css?family=Lobster" as="style">
+<link rel="preload" href="https://qcliwei.com/images/avatar.png" as="image">
+<link rel="preload" href="https://qcliwei.com/images/grey-prism.svg" as="image">
+
+
+<style>
+  body {
+    background: rgb(244, 243, 241) url('/images/grey-prism.svg') repeat fixed;
+  }
+</style>
+<link rel="stylesheet" href="https://qcliwei.com/styles/main.min.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.0.2/dist/medium-zoom.min.js"></script>
+
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video-js.min.css">
+
+
+
+  
+  
+<!--[if lte IE 8]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/videojs-ie8@1.1.2/dist/videojs-ie8.min.js"></script>
+<![endif]-->
+
+<!--[if lte IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/eligrey-classlist-js-polyfill@1.2.20180112/classList.min.js"></script>
+<![endif]-->
+
+
+</head>
+  <body>
+    
+    <div class="suspension">
+      <a role="button" aria-label="Go to top" title="Go to top" class="to-top is-hide"><span class="icon icon-up" aria-hidden="true"></span></a>
+      
+        
+      
+    </div>
+    
+    
+  <header class="site-header">
+  <img class="avatar" src="https://qcliwei.com/images/avatar.png" alt="Avatar">
+  
+  <h2 class="title">Liwei Blog</h2>
+  
+  <p class="subtitle">没事早点睡,有空多赚钱</p>
+  <button class="menu-toggle" type="button" aria-label="Main Menu" aria-expanded="false" tab-index="0">
+    <span class="icon icon-menu" aria-hidden="true"></span>
+  </button>
+
+  <nav class="site-menu collapsed">
+    <h2 class="offscreen">Main Menu</h2>
+    <ul class="menu-list">
+      
+      
+      
+      
+        <li class="menu-item
+          
+          
+           is-active">
+          <a href="https://qcliwei.com/">首页</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="https://qcliwei.com/tags/">标签</a>
+        </li>
+      
+        <li class="menu-item
+          
+          
+          ">
+          <a href="https://qcliwei.com/archives/">归档</a>
+        </li>
+      
+    </ul>
+  </nav>
+  <nav class="social-menu collapsed">
+    <h2 class="offscreen">Social Networks</h2>
+    <ul class="social-list"><li class="social-item">
+          <a href="mailto:liwei0222@gmail.com" title="Email" aria-label="Email">
+            <span class="icon icon-email" aria-hidden="true"></span>
+          </a>
+        </li><li class="social-item">
+          <a href="//github.com/qcliwei" title="GitHub" aria-label="GitHub">
+            <span class="icon icon-github" aria-hidden="true"></span>
+          </a>
+        </li></ul>
+  </nav>
+</header>
+
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">Carthage安装和使用</h1>
+      <p class="post-meta">@liwei · Feb 20, 2019</p>
+    </header>
+    <article class="post-content"><p>之前用OC的时候，第三方库一直用<a href="https://github.com/CocoaPods/CocoaPods">CocoaPods</a>管理和集成，现在用Swift开始用<a href="https://github.com/Carthage/Carthage">Carthage</a>来做</p>
+
+<p><code>Carthage</code>本身就是用Swift写的，相比CocoaPods就我使用感受</p>
+
+<ul>
+<li>本身是去中心化的，CocoaPods每次更新比较耗时，版本不一致可能导致第三方库版本不一样，库的发布者必须发布到CocoaPods上，Carthage是直接依托于github</li>
+<li>没有改变项目工程的目录结构，只关心最基本的操作，集成纯Swift项目编译速度比较快</li>
+<li>缺点是第三方库资源没有CocoaPods多，每次配置完了还要手动写一些配置</li>
+</ul>
+
+<h4 id="carthage安装">Carthage安装</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew install Carthage</code></pre></div>
+<p>安装完了可以看到版本信息</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bas" data-lang="bas"><span style="color:#960050;background-color:#1e0010">$</span> carthage version
+0<span style="color:#ae81ff">.32.0</span></code></pre></div>
+<p>也可以升级以前安装的版本</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bas" data-lang="bas"><span style="color:#960050;background-color:#1e0010">$</span> brew upgrade carthage
+The <span style="color:#960050;background-color:#1e0010">`</span>brew link<span style="color:#960050;background-color:#1e0010">`</span> step did not complete successfully
+The formula built, but is not symlinked into <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local
+Could not symlink etc<span style="color:#f92672">/</span>bash_completion<span style="color:#f92672">.</span>d<span style="color:#f92672">/</span>carthage
+Target <span style="color:#f92672">/</span>usr<span style="color:#f92672">/</span>local<span style="color:#f92672">/</span>etc<span style="color:#f92672">/</span>bash_completion<span style="color:#f92672">.</span>d<span style="color:#f92672">/</span>carthage
+is a symlink belonging to carthage<span style="color:#f92672">.</span> You can unlink it:
+  brew unlink carthage
+
+To force the link and overwrite all conflicting files:
+  brew link <span style="color:#f92672">--</span>overwrite carthage
+
+To list all files that would be deleted:
+  brew link <span style="color:#f92672">--</span>overwrite <span style="color:#f92672">--</span>dry<span style="color:#f92672">-</span>run carthage</code></pre></div>
+<p>我升级的过程中出现了一些错误，提示没有brew没有连接上，手动链接</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew link --overwrite carthage
+Linking /usr/local/Cellar/carthage/0.32.0... Error: Permission denied @ dir_s_mkdir - /usr/local/Frameworks</code></pre></div>
+<p>继续提示错误没有目录权限，执行创建目录</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo mkdir /usr/local/Frameworks
+$ sudo chown <span style="color:#66d9ef">$(</span>whoami<span style="color:#66d9ef">)</span>:admin /usr/local/Frameworks</code></pre></div>
+<p>这次没有错误了，继续手动link</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ brew link --overwrite carthage                  
+Linking /usr/local/Cellar/carthage/0.32.0... <span style="color:#ae81ff">4</span> symlinks created</code></pre></div>
+<p>没有报错了，到此已经升级完毕了</p>
+
+<h4 id="carthage使用">Carthage使用</h4>
+
+<p>1.进入工程目录，然后创建Carthage文件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ cd project path
+$ touch Carthage </code></pre></div>
+<p>2.打开Carthage文件，填写依赖，下面2种方式都可以</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">github <span style="color:#e6db74">&#34;onevcat/Kingfisher&#34;</span> ~&gt; <span style="color:#ae81ff">5</span>.0
+git <span style="color:#e6db74">&#34;https://github.com/onevcat/Kingfisher.git&#34;</span></code></pre></div>
+<p>3.保存Carthage文件，clone源代码，platform参数表示编译的平台，不添加参数会默认编译多个平台</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ Carthage update --platform iOS</code></pre></div>
+<p>安装完毕之后会发现工程目录多了一些文件</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bas" data-lang="bas"><span style="color:#960050;background-color:#1e0010">├──</span> Cartfile	<span style="color:#f92672">//</span>安装的依赖列表
+<span style="color:#960050;background-color:#1e0010">├──</span> Cartfile<span style="color:#f92672">.</span>resolved	<span style="color:#f92672">//</span>依赖文件的版本类似于Podfile<span style="color:#f92672">.</span>lock
+<span style="color:#960050;background-color:#1e0010">└──</span> Carthage	<span style="color:#f92672">//</span>自动生成的目录<span style="color:#960050;background-color:#1e0010">，</span>可以添加到<span style="color:#f92672">.</span>gitignore
+    <span style="color:#960050;background-color:#1e0010">├──</span> Build	<span style="color:#f92672">//</span>编译后的framework
+    <span style="color:#960050;background-color:#1e0010">└──</span> Checkouts	<span style="color:#f92672">//</span>git上拉取的依赖源文件</code></pre></div>
+<p>4.配置工程</p>
+
+<ul>
+<li>打开项目，点击<code>Target -&gt; Build Phases -&gt; Link Library with Libraries</code>选择<code>Carthage/Build</code>目录中要导入的framework</li>
+<li>添加编译脚本<code>/usr/local/bin/Carthage copy-frameworks</code></li>
+<li>增加Input Files <code>$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework</code></li>
+</ul>
+
+<p><img src="https://raw.githubusercontent.com/qcliwei/picbed/master/carthage/carthageuse.jpg" alt="" /></p>
+
+<p>在工程中需要用到的地方<code>import Kingfisher</code>就可以了，以后添加了其他依赖，都需要<code>carthage update</code>，然后手动link到Libraries，增加Input Files</p>
+
+<blockquote>
+<p>Carthage还有一些其他的用法，具体的可以到<a href="https://github.com/Carthage/Carthage">github主页</a>上去看</p>
+</blockquote></article>
+    <footer class="post-footer">
+      
+      <ul class="post-tags">
+        
+          <li><a href="https://qcliwei.com/tags/carthage"><span class="tag">Carthage</span></a></li>
+        
+      </ul>
+      
+      <p class="post-copyright">
+        
+      </p>
+    </footer>
+    
+      
+    
+  </section>
+  
+<footer class="site-footer">
+  <p>© 2017-2019 Liwei Blog</p>
+  <p>Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> with theme <a href="https://github.com/laozhu/hugo-nuo" target="_blank" rel="noopener">Nuo</a>.</p>
+  
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/smooth-scroll@15.0.0/dist/smooth-scroll.min.js"></script>
+
+
+
+<script async src="https://cdn.jsdelivr.net/npm/video.js@7.3.0/dist/video.min.js"></script>
+
+
+
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {
+      inlineMath: [['$','$'], ['\\(','\\)']],
+      displayMath: [['$$','$$'], ['\\[','\\]']],
+      processEscapes: true,
+      processEnvironments: true,
+      skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+      TeX: { equationNumbers: { autoNumber: "AMS" },
+      extensions: ["AMSmath.js", "AMSsymbols.js"] }
+    },
+  });
+</script>
+<script type="text/x-mathjax-config">
+  // Fix <code> tags after MathJax finishes running. This is a
+  // hack to overcome a shortcoming of Markdown. Discussion at
+  // https://github.com/mojombo/jekyll/issues/199
+  MathJax.Hub.Queue(() => {
+    MathJax.Hub.getAllJax().map(v => v.SourceElement().parentNode.className += ' has-jax');
+  });
+</script>
+
+
+
+<script src="https://qcliwei.com/scripts/index.min.js"></script>
+
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('\/service-worker.js').then(function() {
+      console.log('[ServiceWorker] Registered');
+    });
+  }
+</script>
+
+
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-134619349-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+  </body>
+</html>
